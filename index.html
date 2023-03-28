@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .attribution a {
+      color: yellow;
+    }
+
+    body {
+      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+      margin-top: 50px;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .main-screen {
+      background-color: hsl(216, 50%, 16%);
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      color: hsl(215, 51%, 70%);
+      border-radius: 10px;
+    }
+
+    .caption{
+      font-weight: 300;
+    }
+
+    .equilibrium {
+      max-width: 100%;
+      border-radius: 7px;
+    }
+
+    .promo-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .promo-section div {
+      display: flex;
+      align-items: center;
+    }
+
+    .promo-icon {
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .price {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .name {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .name-1 {
+      display: flex;
+      align-items: center;
+      border-top: 1px hsl(215, 32%, 27%) solid;
+    }
+
+    .image-avatar {
+      height: 20px;
+      margin-right: 10px;
+      border: 2px white solid;
+      border-radius: 50%;
+    }
+
+    .image-favicon {
+      width: 15px;
+    }
+
+    .text {
+      font-size: 18px;
+      color: hsl(0, 0%, 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-screen">
+    <img src="images/image-equilibrium.jpg" class="equilibrium">
+
+    <h2 class="text"> Equilibrium #3429</h2>
+    <p class="caption"> Our Equilibrium collection promotes balance and calm.
+    </p>
+
+    <div class="promo-section">
+      <div>
+        <img src="images/icon-ethereum.svg" class="promo-icon">
+        <p>0.041 ETH</p>
+      </div>
+
+      <div>
+        <img src="images/icon-clock.svg" class="promo-icon" />
+        <p>3 days left</p>
+      </div>
+    </div>
+
+    <div class="name-1"><img src="images/image-avatar.png" class="image-avatar"> 
+      <p>Creation of <span class="name">Jules Wyver</span></p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">soulboy</a>.
+  </div>
+</body>
+
+</html>
